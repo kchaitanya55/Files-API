@@ -16,9 +16,11 @@ The API has endpoint through which We can search the Files.
 ```java
 	    /search?location=d
 
-        /search?name=IMG_9151.JPG
+            /search?name=IMG_9151.JPG
 ```
     
 
+
 2.If the user send the invalid parameter which is not available .Error response will be sent to the user.
+
 3.Basic Authentication is required for all the Requests with credentials(admin/admin);
