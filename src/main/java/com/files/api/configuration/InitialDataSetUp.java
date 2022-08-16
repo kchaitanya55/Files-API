@@ -22,6 +22,7 @@ public class InitialDataSetUp {
 
     @EventListener(ApplicationReadyEvent.class)
     public void init() throws IOException {
+        //Scanning only D: as it takes lots of time
         Arrays.stream(File.listRoots()).filter(d->d.getAbsolutePath().startsWith("D")).map(File::toPath).forEach(path ->
         {
             try {
